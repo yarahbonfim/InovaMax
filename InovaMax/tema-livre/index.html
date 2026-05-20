@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Modelo neutro pronto para customizar." />
+    <title>🎸 Black Horizon</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+
+        <a href="#" class="logo" aria-label="Black Horizon — página inicial">
+          🎸 Black Horizon
+        </a>
+
+        <nav aria-label="Menu principal">
+          <ul class="nav-list">
+            <li><a href="#sobre">Nossa História</a></li>
+            <li><a href="#cardapio">Albúns</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container">
+          <h1 id="hero-title">🎸 Black Horizon</h1>
+          <a class="btn" href="#cardapio">Albúm</a>
+        </div>
+      </section>
+
+      <section id="sobre" class="section" aria-labelledby="sobre-title">
+        <div class="container">
+          <h2 id="sobre-title">Sobre nós</h2>
+          <p>
+            <b>Somos a banda Black Horizon. Black Horizon nasceu da união de
+            amigos apaixonados por rock e pela vontade de transformar
+            experiências reais em música. Misturando riffs pesados, melodias
+            marcantes e letras intensas, a banda construiu sua identidade com
+            autenticidade, energia e conexão com o público. O nome representa
+            o desconhecido e a busca constante por novos caminhos no rock.</b>
+          </p>
+        </div>
+      </section>
+
+      <section id="cardapio" class="section section--alt" aria-labelledby="cardapio-title">
+        <div class="container">
+          <h2 id="cardapio-title">Albúns</h2>
+          <ul class="cards" id="lista-itens" aria-live="polite">
+            <!-- Itens injetados via JS a partir de js/dados.js -->
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <p>© <span id="ano"></span> Black Horizon. Projeto profissional — Empresa InovaMax · Henzo/Yarah/Sarah/Luis/Jose.</p>
+      </div>
+    </footer>
+
+    <script src="js/dados.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
